@@ -1,0 +1,1001 @@
+body
+{
+    perspective: 500px;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+main
+{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+/************** Header **************/
+
+header
+{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    /* background:  */
+    justify-content: space-between;
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+header nav
+{
+    width: max(400px,40%);
+    height: 80px;
+}
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul li
+{
+    font-size: max(10px,1vw);
+    width: 25%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+header nav ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255,255);
+    font-family: sans-serif;
+}
+header h1
+{
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+/************** Header **************/
+
+/************** Section1 **************/
+.sec1
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    background-size: 100% 100%;
+}
+.sec1 img
+{
+    width: 100%;
+    height: 500px;
+}
+.sec1 div:first-of-type
+{
+    display: flex;
+    position: absolute;
+    width: max(200px,30vw);
+    height: 200px;
+    border: yellow solid 5px;
+    z-index: 2;
+    top: 150px;
+    left: max(10px,15vw);
+}
+.sec1 div:last-of-type
+{
+    position: absolute;
+    width: max(200px,32vw);
+    height: 150px;
+    background-color: #fffc;
+    z-index: 2;
+    top: 270px;
+    left: max(20px,25vw);
+}
+.sec1 div:last-of-type h4
+{
+    height: 50px;
+    font-size: max(12px,2vw);
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.sec1 div:last-of-type h1
+{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: turquoise;
+    font-size: max(18px,3vw);
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+/************** Section1 **************/
+
+/************** Section2 **************/
+.sec2
+{
+    display: flex;
+    position: relative;;
+    width: 80%;
+    min-height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.sec2>div
+{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transition: all 1s;
+    margin: 10px 0;
+    transform-style: preserve-3d;;
+}
+.card1 .front
+{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    background: url(../images/ab1.jpg);
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+
+}
+
+.card1 .back
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card1:hover
+{
+    transform: rotateY(180deg);
+}
+
+.card2 .front
+{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    background: url(../images/ab2.jpg);
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+}
+.card2 .back
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card2:hover
+{
+    transform: rotateY(180deg);
+}
+
+.card3 .front
+{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card3 .back
+{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    background-image: url(../images/g6.jpg);
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card3:hover
+{
+    transform: rotateY(180deg);
+}
+
+.card4 .front
+{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    background: url(../images/ab3.jpg);
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+}
+.card4 .back
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card4:hover
+{
+    transform: rotateY(180deg);
+}
+.sec2 div h4
+{
+    font-family: sans-serif;
+    height: 30px;
+}
+.sec2 div h2
+{
+    font-family: sans-serif;
+    height: 70px;
+    color: orange;
+    font-weight: 100;
+}
+.sec2 div p
+{
+    font-family: sans-serif;
+    height: 200px;
+}
+/************** Section2 **************/
+
+/************** Section3 **************/
+.sec3
+{
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: top;
+    background: url(../images/b3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3 aside:first-of-type
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+.sec3 aside:first-of-type>h4
+{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-weight: 100;
+    
+}
+.sec3 aside:first-of-type>h1
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 50px;
+    font-size: max(20px,2.5vw);
+    font-family: sans-serif;
+    color: orange;
+    font-weight: 100;
+}
+.sec3 aside:last-of-type
+{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec3 aside:last-of-type div
+{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    border: 2.5px white solid;
+    margin: 10px 0;
+}
+.sec3 aside:last-of-type div i
+{
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.sec3 aside:last-of-type div span
+{
+    display: block;
+    width:200px;
+    height: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 10px;
+
+}
+/************** Section3 **************/
+
+/************** Section4 **************/
+.sec4
+{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.sec4 aside:first-of-type
+{
+    margin: 50px 0;
+    width: 100%;
+    height: 100px;
+}
+.sec4 aside:first-of-type h4
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.sec4 aside:first-of-type h1
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: orange;
+}
+
+.sec4 aside:last-of-type
+{
+    width:80%;
+    min-height: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.sec4 aside:last-of-type div
+{
+    width: 300px;
+    min-height: 175px;
+    border: 1px lightgray solid;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+    margin: 10px 0;
+}
+.sec4 aside:last-of-type div i
+{
+    font-size: 20px;
+}
+.sec4 aside:last-of-type div h2
+{
+    margin: 10px 0;
+    color: lightgreen;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.sec4 aside:last-of-type div p
+{
+    font-family: sans-serif;
+}
+/************** Section4 **************/
+
+/************** Section5 **************/
+.sec5
+{
+    width: 100%;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+}
+.sec5 div:first-of-type
+{
+    width:max(400px,50%);
+    min-height: 300px;
+    background: url(../images/ab4.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.sec5 div:nth-of-type(2) 
+{
+    width: max(200px,25%);
+    height: 150px;
+    position: absolute;
+    border: mediumseagreen 5px solid;
+    left:max(10px,27vw);
+    top: max(10px,3vw);
+    
+}
+.sec5 div:last-of-type
+{
+    width:max(400px,50%);
+    min-height: 300px;
+    background-color: lightgray;
+}
+.sec5 div:last-of-type h1
+{
+    font-size: max(14px,2vw);
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    padding: 75px;
+    color: mediumseagreen;
+}
+.sec5 div:last-of-type p
+{
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    padding: 0 75px;
+    font-size: max(12px,1.4vw);;
+}
+/************** Section5 **************/
+
+/************** Section6 **************/
+.sec6
+{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.contain
+{
+    width: 70%;
+    margin: auto;
+}
+.contain aside:first-of-type
+{
+    margin: 50px 0;
+    width: 100%;
+    height: 100px;
+}
+.contain aside:first-of-type h4
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.contain aside:first-of-type h1
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: orange;
+}
+.contain aside:last-of-type
+{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.contain aside:last-of-type div:first-of-type
+{
+    width:max(250px,20%);
+    height: 175px;
+    margin: 10px 0;
+}
+.contain aside:last-of-type div:first-of-type img
+{
+    width:100%;
+    height: 100%;
+}
+.contain aside:last-of-type div:nth-of-type(2)
+{
+    width:max(250px,20%);
+    height: 175px;
+    margin: 10px 0;
+}
+.contain aside:last-of-type div:nth-of-type(2) img
+{
+    width:100%;
+    height: 100%;
+}
+.contain aside:last-of-type div:nth-of-type(3)
+{
+    width:max(400px,40%);
+    height: 175px;
+    margin: 10px 0;
+}
+.contain aside:last-of-type div:nth-of-type(3) img
+{
+    width:100%;
+    height: 100%;
+}
+.contain aside:last-of-type div:nth-of-type(4)
+{
+    width:max(400px,40%);
+    height: 175px;
+    margin: 10px 0;    
+}
+.contain aside:last-of-type div:nth-of-type(4) img
+{
+    width:100%;
+    height: 100%;
+}
+.contain aside:last-of-type div:nth-of-type(5)
+{
+    width:max(250px,20%);
+    height: 175px;
+    margin: 10px 0;
+}
+.contain aside:last-of-type div:nth-of-type(5) img
+{
+    width:100%;
+    height: 100%;
+}
+.contain aside:last-of-type div:nth-of-type(6)
+{
+    width:max(250px,20%);
+    height: 175px;
+    margin: 10px 0;
+}
+.contain aside:last-of-type div:nth-of-type(6) img
+{
+    width:100%;
+    height: 100%;
+}
+/************** Section6 **************/
+
+/************** Section7 **************/
+.sec7
+{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.sec7 div
+{
+    width: 600px;
+   min-height: 250px;
+    background-color: mediumseagreen;
+    box-sizing: border-box;
+    padding: 50px 50px 0 50px;
+}
+.sec7 div:nth-child(2)
+{
+    background-image: url(../images/b4.jpg);
+    background-size: 100% 100%
+}
+.sec7 div:nth-child(3)
+{
+    background-image: url(../images/g6.jpg);
+    background-size: 100% 100%
+}
+.sec7 div:nth-child(1),.sec7 div:nth-child(4)
+{
+    background-color: lightgray;
+}
+.sec7 div a
+{
+    width: 100px;
+    background: #000a;
+    color: #fff;
+    display: block;
+    box-sizing: border-box;
+    padding:10px;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.sec7 div h1
+{
+    color: mediumseagreen;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.sec7 div h5,.sec7 div p
+{
+    color: darkgray;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+/************** Section7 **************/
+
+/************** Section8 **************/
+.sec8
+{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.sec8 aside:first-of-type
+{
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec8 aside:last-of-type
+{
+    width: 80%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.sec8 aside h4
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.sec8 aside h1
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: orange;
+}
+.sec8 aside:last-of-type>div
+{
+    width: 250px;
+    height: 400px;
+}
+.sec8 aside:last-of-type>div h3
+{
+    color: #f90;
+    font-family: sans-serif;
+    margin: 5px 0;
+}
+.sec8 aside:last-of-type>div a
+{
+    text-decoration: none;
+    margin-right: 50px;
+    color: mediumseagreen;
+
+}
+.sec8 aside:last-of-type>div p
+{
+    margin: 5px 0;
+}
+.sec8 aside:last-of-type>div span
+{
+
+    font-size: 16px;
+    font-weight: bold;
+}
+.sec8 aside:last-of-type>div i:first-of-type
+{
+    margin-left: 20px;
+}
+.sec8 aside:last-of-type>div i
+{
+    color: #f90;
+    font-size: 10px;
+    margin: 40px 0;
+}
+.sec8 aside:last-of-type>div:first-of-type div
+{
+    width: 250px;
+    height: 200px;
+    background-image: url(../images/d1.jpg);
+    background-size: 100% 100%;
+}
+.sec8 aside:last-of-type>div:nth-of-type(2) div
+{
+    width: 250px;
+    height: 200px;
+    background-image: url(../images/d2.jpg);
+    background-size: 100% 100%;
+}
+.sec8 aside:last-of-type>div:nth-of-type(3) div
+{
+    width: 250px;
+    height: 200px;
+    background-image: url(../images/d3.jpg);
+    background-size: 100% 100%;
+}
+.sec8 aside:last-of-type>div:last-of-type div
+{
+    width: 250px;
+    height: 200px;
+    background-image: url(../images/d4.jpg);
+    background-size: 100% 100%;
+}
+
+/************** Section8 **************/
+
+/************** Section9 **************/
+.sec9
+{
+    width: 100%;
+    min-height: 300px;
+    background: url(../images/b4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec9 aside
+{
+    width: 100%;
+    height: 100%;
+}
+.sec9 aside div:first-of-type
+{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+.sec9 aside div h4
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #fff;
+}
+.sec9 aside div h1
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: orange;
+}
+.sec9 aside div:last-of-type
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center ;
+
+}
+.sec9 aside div form
+{
+    width: 300px;
+    min-height: 30px;
+    border: solid #fff8 20px;
+    background-color: #fff8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+
+.sec9 [type="email"]
+{
+    width: min(200px,75%);
+    height: 30px;
+}
+.sec9 [type="submit"]
+{
+    width: min(100px,25%);
+    height: 30px;
+    background-color: mediumseagreen;
+    color: #fff;
+    border: none;
+}
+/************** Section9 **************/
+
+/************** Section10 **************/
+.sec10
+{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.sec10 aside
+{
+    width: 80%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: center; */
+
+}
+.sec10 aside div:first-of-type
+{
+    width: 100%;
+    min-height: 100px;
+}
+.sec10 aside div h4
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.sec10 aside div h1
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: orange;
+}
+.sec10 aside div:last-of-type
+{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: center;
+    /* background-color: darkorange; */
+}
+.sec10 aside div:last-of-type form
+{
+    width: 400px;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.sec10 aside div:last-of-type form input
+{
+    width: 190px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.sec10 aside div:last-of-type form input:last-of-type
+{
+    width: 100%;
+    background-color:mediumseagreen ;
+    border: none;
+}
+
+.sec10 aside div:last-of-type form textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 100px;
+
+}
+/************** Section10 **************/
+
+/************** section11 **************/
+.sec11
+{
+    width: 100%;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: dimgray;
+}
+.sec11 aside
+{
+    width: 20%;
+    min-height: 200px;
+    margin: auto;
+}
+.sec11 aside p
+{
+    color: #fffb;
+    font-size: max(14px,1.5vw);
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+.sec11 aside p span
+{
+    color: #fff;
+    font-size: max(16px,1.7vw);
+
+}
+.sec11 aside div
+{
+    width: 100%;
+    text-align: center;
+}
+.sec11 aside div i:first-of-type
+{
+    color: blue;
+    font-size: max(20px,3.5vw);;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.sec11 aside div i:nth-of-type(2)
+{
+    color: #05f;
+    font-size: max(20px,3.5vw);;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.sec11 aside div i:nth-of-type(3)
+{
+    color: #f90;
+    font-size: max(20px,3.5vw);;
+    margin: 0 5px;
+}
+.sec11 aside>i
+{
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: max(20px,3.5vw);;
+}
+/************** section11 **************/
+
+/************** Footer **************/
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+footer marquee
+{
+    line-height: 50px;
+    color: white;
+}
+/************** Footer **************/
